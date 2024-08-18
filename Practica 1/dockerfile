@@ -1,0 +1,10 @@
+#Instancia de node con linux
+FROM node:alpine 
+
+#Copyar todo lo que esta en la raiz
+COPY . /app
+#ingresar a una carpeta
+WORKDIR /app
+
+#Ejecutar node Js
+CMD node app.js
